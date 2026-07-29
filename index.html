@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prompt & Script Generator — Free Micro Tool</title>
+    <!-- Tailwind CSS (Fast & Clean Design) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- GOOGLE ADSENSE SCRIPT (Jab AdSense Approve Ho Jaye Toh Apna Client ID Yahan Lagaaein) -->
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col justify-between">
+
+    <!-- Header Section -->
+    <header class="border-b border-slate-800 bg-slate-900/60 backdrop-blur-md px-6 py-4 sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center font-bold text-white shadow-lg">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <h1 class="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                    AI Prompt & Script Studio
+                </h1>
+            </div>
+            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                100% Free Utility Tool
+            </span>
+        </div>
+    </header>
+
+    <!-- Top Advertisement Banner Space -->
+    <div class="max-w-4xl mx-auto w-full px-4 pt-6">
+        <div class="w-full h-24 bg-slate-900/40 border border-dashed border-slate-800 rounded-xl flex items-center justify-center text-slate-500 text-xs tracking-wider uppercase">
+            <!-- Google AdSense / Adsterra Leaderboard Banner Code Place Here -->
+            <span>📢 Advertisement Space (AdSense / Adsterra Banner)</span>
+        </div>
+    </div>
+
+    <!-- Main Tool Interface -->
+    <main class="max-w-4xl mx-auto w-full px-4 py-8 flex-1">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-2xl">
+            
+            <div class="mb-6 text-center">
+                <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-2">Instant AI Prompt Generator</h2>
+                <p class="text-slate-400 text-xs md:text-sm">Enter your video topic to generate Midjourney Image Prompts, ChatGPT Hooks, and YouTube Shorts Scripts instantly.</p>
+            </div>
+
+            <!-- Input Form -->
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Select Platform / Output Type:</label>
+                    <select id="promptType" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500">
+                        <option value="chatgpt">ChatGPT Script Prompt (For YouTubers & Creators)</option>
+                        <option value="midjourney">Midjourney Visual Prompt (Photorealistic Images)</option>
+                        <option value="viral_hooks">5 High-CTR Viral Video Hooks</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Enter Video Topic or Idea:</label>
+                    <input type="text" id="userTopic" placeholder="e.g. 5 Secret AI Tools for Business, Islamic History..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500">
+                </div>
+
+                <button onclick="generatePrompt()" class="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold py-3.5 rounded-xl transition shadow-lg shadow-cyan-500/20 text-sm flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-bolt"></i> Generate Prompts Now
+                </button>
+            </div>
+
+            <!-- Mid Content Advertisement Banner Space -->
+            <div class="my-6 w-full h-20 bg-slate-950/50 border border-dashed border-slate-800 rounded-xl flex items-center justify-center text-slate-500 text-xs uppercase">
+                <span>📢 In-Feed Ad Unit (Google AdSense)</span>
+            </div>
+
+            <!-- Output Box -->
+            <div class="mt-6">
+                <div class="flex justify-between items-center mb-2">
+                    <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">Generated Result:</span>
+                    <button onclick="copyText()" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 px-3 py-1.5 rounded-lg border border-slate-700 transition flex items-center gap-1">
+                        <i class="fa-regular fa-copy"></i> Copy
+                    </button>
+                </div>
+                <div id="outputBox" class="w-full min-h-[160px] p-4 bg-slate-950 border border-slate-800 rounded-xl text-slate-300 font-mono text-xs md:text-sm leading-relaxed whitespace-pre-wrap overflow-y-auto">
+Your generated prompts will appear here... Click "Generate Prompts Now"!
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="border-t border-slate-900 bg-slate-950 py-6 text-center text-slate-500 text-xs">
+        <p>© 2026 Free AI Micro Tools. Designed for Creators & Editors.</p>
+    </footer>
+
+    <!-- Logic Script -->
+    <script>
+        function generatePrompt() {
+            const topic = document.getElementById('userTopic').value.trim();
+            const type = document.getElementById('promptType').value;
+            const output = document.getElementById('outputBox');
+
+            if(!topic) {
+                output.innerText = "⚠️ Please enter a topic first!";
+                return;
+            }
+
+            output.innerText = "⚡ Generating optimized prompt... Please wait...";
+
+            setTimeout(() => {
+                if(type === 'chatgpt') {
+                    output.innerText = `Act as an expert YouTube Script Writer. Write a 60-second viral Short script about "${topic}". \n\nStructure:\n1. Attention-grabbing visual hook (0-5s)\n2. Fast-paced 3 key points\n3. High-converting Call to Action (CTA).\n\nKeep sentences short, energetic, and engaging for modern video audiences.`;
+                } else if(type === 'midjourney') {
+                    output.innerText = `Hyper-realistic thumbnail visual of ${topic}, 8k resolution, cinematic lighting, vibrant color palette, dramatic angles, trending on ArtStation, photorealistic rendering --ar 16:9 --v 6.0`;
+                } else if(type === 'viral_hooks') {
+                    output.innerText = `🔥 5 VIRAL HOOKS FOR: "${topic}"\n\n1. Stop scrolling if you want to master ${topic} in 2026...\n2. 99% of people get ${topic} completely wrong. Here is the secret...\n3. If I had to start over with ${topic}, I would do this exact step...\n4. This simple ${topic} trick feels illegal to know...\n5. The ultimate secret method to ${topic} nobody talks about.`;
+                }
+            }, 400);
+        }
+
+        function copyText() {
+            const text = document.getElementById('outputBox').innerText;
+            navigator.clipboard.writeText(text);
+            alert("Copied to clipboard!");
+        }
+    </script>
+</body>
+</html>
