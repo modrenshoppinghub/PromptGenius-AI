@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InstantPrompt Studio — Advanced AI Prompt Generator</title>
+    <title>InstantPrompt Studio — AI Long Video, Thumbnail & SEO Suite</title>
+    <!-- Google & AI SEO Search Tags -->
+    <meta name="description" content="InstantPrompt Studio is a 100% Free AI Tool for YouTubers. Generate Long YouTube Scripts, Thumbnail Concepts with Custom Photo Placement, Viral Hooks, and SEO Tags instantly.">
+    <meta name="keywords" content="youtube long script generator, thumbnail prompt generator, ai youtube tools, free ai prompt suite, youtube seo research">
+    <meta name="author" content="InstantPrompt Studio">
+    <meta property="og:title" content="InstantPrompt Studio — Free AI Suite for YouTube Creators">
+    <meta property="og:description" content="Generate long-form scripts, thumbnail design prompts, and viral SEO tags in seconds. 100% Free.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://instantpromtstudio.netlify.app/">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -23,19 +32,22 @@
                 <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center font-bold text-white shadow-lg">
                     <i class="fa-solid fa-brain"></i>
                 </div>
-                <h1 class="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                    InstantPrompt Studio
-                </h1>
+                <div>
+                    <h1 class="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                        InstantPrompt Studio
+                    </h1>
+                    <p class="text-[10px] text-slate-400 hidden sm:block">AI Creator Flow Suite</p>
+                </div>
             </div>
             
             <!-- Smartlink Monetization Button -->
-            <a href="https://www.effectivecpmnetwork.com/u847ch25j?key=4108df6f43d21a741d554dc23eac27a5" target="_blank" class="text-xs font-semibold px-3 py-1.5 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow hover:opacity-90 transition flex items-center gap-1">
-                🔥 Trending AI Tools <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            <a href="https://www.effectivecpmnetwork.com/u847ch25j?key=4108df6f43d21a741d554dc23eac27a5" target="_blank" class="text-xs font-semibold px-3.5 py-2 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-md hover:opacity-90 transition flex items-center gap-1.5">
+                🔥 Pro AI Tools <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
             </a>
         </div>
     </header>
 
-    <!-- Top Banner (Adsterra 728x90 Ad) -->
+    <!-- Top Banner Space (Adsterra 728x90 Ad) -->
     <div class="max-w-4xl mx-auto w-full px-4 pt-6 flex justify-center items-center overflow-hidden min-h-[90px]">
         <script>
             atOptions = {
@@ -54,42 +66,43 @@
         <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-2xl">
             
             <div class="mb-6 text-center">
-                <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-2">Master AI Prompt Generator</h2>
-                <p class="text-slate-400 text-xs md:text-sm">Generate highly detailed, professional prompts. Copy the result and paste it into ChatGPT or Midjourney for perfect results!</p>
+                <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-2">Google Flow AI Creator Suite</h2>
+                <p class="text-slate-400 text-xs md:text-sm">Generate Full Long Scripts, Custom Thumbnail Design Prompts (with Photo Placement), SEO Search Keywords, & Midjourney Prompts!</p>
             </div>
 
             <!-- Input Form -->
             <div class="space-y-5">
                 <div>
-                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">1. Select AI Goal:</label>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">1. Select AI Creator Tool:</label>
                     <select id="promptType" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition">
-                        <option value="chatgpt">🎥 Complete YouTube Shorts/TikTok Script</option>
+                        <option value="long_script">🎬 Full Long-Form YouTube Script (5-10 Min Masterclass)</option>
+                        <option value="thumbnail_designer">🖼️ Thumbnail Concept & Photo Placement Prompt (High CTR)</option>
+                        <option value="chatgpt_short">⚡ Fast YouTube Shorts / TikTok Script</option>
                         <option value="midjourney">🎨 Midjourney Photorealistic Image Prompt</option>
-                        <option value="viral_hooks">🔥 5 Viral Hooks for Videos</option>
-                        <option value="seo">📈 YouTube SEO (Titles, Description, Tags)</option>
+                        <option value="seo">📈 YouTube SEO Research (Titles, Description, Tags)</option>
                     </select>
                 </div>
 
                 <div>
-                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">2. Enter Your Topic or Idea:</label>
-                    <input type="text" id="userTopic" placeholder="e.g. History of Artificial Intelligence, How to make money online..." class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition">
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">2. Enter Video Topic / Title / Niche:</label>
+                    <input type="text" id="userTopic" placeholder="e.g. History of Islamic Empire, How to make $1000 with AI, Attaullah Khan Songs..." class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition">
                 </div>
 
                 <button onclick="generatePrompt()" class="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold py-4 rounded-xl transition shadow-lg shadow-cyan-500/20 text-sm flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-wand-magic-sparkles"></i> Generate Master Prompt
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> Generate AI Master Flow
                 </button>
             </div>
 
             <!-- Output Box -->
             <div class="mt-8">
                 <div class="flex justify-between items-center mb-3">
-                    <span class="text-xs font-bold uppercase tracking-wider text-cyan-400"><i class="fa-solid fa-code"></i> Copy this into ChatGPT/Midjourney:</span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-cyan-400"><i class="fa-solid fa-code"></i> AI Master Output (Copy & Use):</span>
                     <button onclick="copyText()" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 px-4 py-2 rounded-lg border border-slate-700 transition flex items-center gap-2 shadow">
-                        <i class="fa-regular fa-copy"></i> Copy Text
+                        <i class="fa-regular fa-copy"></i> Copy Output
                     </button>
                 </div>
-                <div id="outputBox" class="w-full min-h-[250px] p-5 bg-[#0d1117] border border-slate-700 rounded-xl text-emerald-400 font-mono text-sm leading-relaxed whitespace-pre-wrap overflow-y-auto shadow-inner">
-Waiting for your command... Enter a topic and click generate!
+                <div id="outputBox" class="w-full min-h-[280px] p-5 bg-[#0d1117] border border-slate-700 rounded-xl text-emerald-400 font-mono text-xs md:text-sm leading-relaxed whitespace-pre-wrap overflow-y-auto shadow-inner">
+Waiting for your input... Choose a tool, enter your topic and click "Generate AI Master Flow"!
                 </div>
             </div>
 
@@ -104,7 +117,7 @@ Waiting for your command... Enter a topic and click generate!
 
     <!-- Footer Section -->
     <footer class="border-t border-slate-900 bg-slate-950 py-6 text-center text-slate-500 text-xs">
-        <p>© 2026 InstantPrompt Studio. The Ultimate Creator Tool.</p>
+        <p>© 2026 InstantPrompt Studio. Google Flow Creator Suite.</p>
     </footer>
 
     <!-- Logic Script -->
@@ -119,22 +132,25 @@ Waiting for your command... Enter a topic and click generate!
                 return;
             }
 
-            output.innerHTML = "<span class='text-cyan-400 animate-pulse'>⚡ Generating professional master prompt... Analyzing topic...</span>";
+            output.innerHTML = "<span class='text-cyan-400 animate-pulse'>⚡ Processing with AI Flow Engine... Generating full blueprint...</span>";
 
             setTimeout(() => {
                 let finalPrompt = "";
 
-                if(type === 'chatgpt') {
-                    finalPrompt = `Act as an expert YouTube Script Writer and Viral Content Strategist. I need a highly engaging, fast-paced 60-second YouTube Shorts/TikTok script about: "${topic}".\n\nPlease follow this exact structure:\n\n1. 💥 HOOK (0-3 seconds): Write a pattern-interrupting statement or question that makes the viewer stop scrolling immediately.\n2. 📖 INTRO (3-10 seconds): Establish context and explain exactly why the viewer should care.\n3. 🚀 VALUE/BODY (10-45 seconds): Give 3 rapid-fire, highly valuable points or secrets about the topic. Keep sentences punchy and conversational.\n4. 🎬 CTA (45-60 seconds): A strong Call to Action (e.g., Subscribe for more, save this video).\n\nTone: Energetic, authoritative, and engaging. \nVisuals: Include suggestions for B-roll (visuals) and sound effects in brackets like this: [Show fast zoom in, play whoosh sound].`;
+                if(type === 'long_script') {
+                    finalPrompt = `Act as a Master YouTube Scriptwriter and Content Director. Write a complete 8 to 10-minute long-form YouTube video script on: "${topic}".\n\nStructure required:\n\n1. 💥 HOOK (0:00 - 0:45):\n- High intensity visual hook.\n- A shocking statement or question.\n\n2. 🎬 INTRO & VALUE PROMISE (0:45 - 1:30):\n- Tell viewers exactly what they will gain.\n- Add a 'Watch till the end for a special tip' hook.\n\n3. 📚 CHAPTER 1: THE FOUNDATION (1:30 - 3:30):\n- Deep dive explanation.\n- B-roll visual cues in brackets [e.g., Show fast-paced montage, slow drone shot].\n\n4. 🚀 CHAPTER 2: THE CORE SECRET / ACTIONABLE STEPS (3:30 - 6:30):\n- Step-by-step breakdown.\n- On-screen graphic suggestions.\n\n5. ⚠️ CHAPTER 3: COMMON MISTAKES TO AVOID (6:30 - 8:00):\n- Common pitfalls and practical solutions.\n\n6. 🎯 OUTRO & CTA (8:00 - End):\n- Summarize main takeaways.\n- End-screen video recommendation and subscription request.`;
+                } 
+                else if(type === 'thumbnail_designer') {
+                    finalPrompt = `Act as an expert YouTube Thumbnail Graphic Designer & Midjourney Artist. Design a High-CTR (Click-Through Rate) Thumbnail concept for a video titled: "${topic}".\n\nProvide the following complete Thumbnail Blueprint:\n\n1. 🖼️ VISUAL CONCEPT:\n- Foreground, midground, and background details.\n- Emotion/Expression needed.\n\n2. 📸 CREATOR PHOTO PLACEMENT (How to add YOUR own photo):\n- Placement: Cutout of your photo on the RIGHT side (facing left toward the text/subject).\n- Expression: Shocked / Pointing / Curious expression.\n- Lighting effect: Add a cyan or neon-blue rim glow/drop-shadow around your photo cutout to make it pop.\n\n3. ✍️ TEXT OVERLAY (Max 3-4 Words):\n- High contrast bold yellow/white font.\n- Suggested text: "[Insert 3 Power Words related to ${topic}]".\n\n4. 🎨 MIDJOURNEY BACKGROUND PROMPT:\n"Cinematic hyper-realistic background depicting ${topic}, dark dramatic lighting, neon accents, depth of field blur, high contrast, 8k resolution --ar 16:9 --v 6.0"`;
+                }
+                else if(type === 'chatgpt_short') {
+                    finalPrompt = `Act as an expert YouTube Shorts Writer. Write a fast-paced 60-second viral script about "${topic}".\n\nStructure:\n1. Hook (0-3s)\n2. Fast 3 key points (3-45s)\n3. CTA (45-60s)\nInclude B-roll sound effect cues in brackets.`;
                 } 
                 else if(type === 'midjourney') {
-                    finalPrompt = `A hyper-realistic cinematic masterpiece depicting ${topic}. \n\nStyle: Photorealistic, 8k resolution, highly detailed, Unreal Engine 5 render, volumetric lighting, ray tracing. \nCamera: Shot on 35mm lens, shallow depth of field, dramatic angles, macro details. \nLighting: Cinematic edge lighting, moody atmosphere, neon rim light, highly contrasting shadows. \nColors: Vibrant color grading similar to a Hollywood blockbuster, sharp focus. \n--ar 16:9 --v 6.0 --style raw --q 2`;
+                    finalPrompt = `A hyper-realistic cinematic masterpiece depicting ${topic}. \n\nStyle: Photorealistic, 8k resolution, Unreal Engine 5 render, volumetric lighting.\nCamera: 35mm lens, shallow depth of field, macro details.\nLighting: Dramatic rim light, high contrast shadows.\n--ar 16:9 --v 6.0 --style raw`;
                 } 
-                else if(type === 'viral_hooks') {
-                    finalPrompt = `Act as an expert Copywriter. Write 5 highly engaging, pattern-interrupting Hooks for a short-form video (TikTok/Shorts) about "${topic}". \n\nThe hooks must use strong psychological triggers like curiosity, FOMO (Fear of Missing Out), or contrarian views. \n\nExamples of the vibe I want:\n- "Stop doing [X] if you want to achieve [Y]..."\n- "99% of people don't know this secret about..."\n- "Here is why your [X] is failing, and how to fix it in 30 seconds..."\n\nDeliver ONLY the 5 hooks, numbered 1 to 5. Make them irresistible to scroll past.`;
-                }
                 else if(type === 'seo') {
-                    finalPrompt = `Act as an expert YouTube SEO Specialist. I am uploading a video about: "${topic}".\n\nPlease provide the following for maximum algorithm reach:\n\n1. TITLES: 3 Clickable, High-CTR Titles (under 60 characters, no clickbait but highly engaging).\n2. DESCRIPTION: A highly optimized YouTube Description. The first 2 lines must be optimized for search, followed by a brief summary of the video, and a section for social links.\n3. TAGS: The top 15 high-volume search tags/keywords separated by commas (ready to copy and paste).`;
+                    finalPrompt = `Act as a YouTube SEO Specialist for "${topic}". Provide:\n1. 3 High-CTR Titles.\n2. Search-Optimized Description (First 2 lines search-friendly).\n3. Top 15 Search Tags separated by commas.`;
                 }
 
                 output.innerText = finalPrompt;
@@ -143,7 +159,7 @@ Waiting for your command... Enter a topic and click generate!
 
         function copyText() {
             const text = document.getElementById('outputBox').innerText;
-            if(text.includes("Waiting for your command") || text.includes("Error")) {
+            if(text.includes("Waiting for your input") || text.includes("Error")) {
                 alert("Nothing to copy yet!");
                 return;
             }
@@ -151,7 +167,7 @@ Waiting for your command... Enter a topic and click generate!
             
             const btn = event.currentTarget;
             const originalText = btn.innerHTML;
-            btn.innerHTML = `<i class="fa-solid fa-check"></i> Copied!`;
+            btn.innerHTML = `<i class="fa-solid fa-check"></i> Copied Output!`;
             btn.classList.replace('bg-slate-800', 'bg-emerald-600');
             
             setTimeout(() => {
